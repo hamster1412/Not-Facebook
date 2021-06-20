@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Header from "../components/Header";
+import SideBar from '../components/SideBar';
+import Widgets from '../components/Widgets'
 
 export default function Home() {
   return (
@@ -6,8 +9,11 @@ export default function Home() {
       <Head>
         <title>Facebook</title>
       </Head>
-      
-      <main></main>
+      <Header />
+      <main>
+        <SideBar />
+        <Widgets />
+      </main>
     </div>
   );
 }
